@@ -1,4 +1,4 @@
-/* 그래프 이론 - 1260 DFS 와 BFS  */
+/* 그래프 - 1260 DFS 와 BFS  */
 
 #include<iostream>
 #include<queue>
