@@ -21,7 +21,7 @@ int k; // 배추가 심어져 있는 위치의 개수
 int testCaseNum; //테스트 케이스의 개수 
 int cnt = 0; // 필요한 배추지렁이의 수 
 
-void dfs(int x, int y) {
+void bfs(int x, int y) {
 	queue<pair<int, int>> q;
 	q.push(pair<int, int>(x, y));
 	visited[x][y] = true;
@@ -64,7 +64,7 @@ int main() {
 		for (int j = 0; j < m; j++) {
 			for (int t = 0; t < n; t++) {
 				if (map[j][t] == 1 && visited[j][t] == false) {
-					dfs(j, t);
+					bfs(j, t);
 					cnt++;
 				}
 			}

@@ -34,5 +34,4 @@ int main() {
 	}
 	dfs(1);
 	cout << virusCnt;
-
 }
